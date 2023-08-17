@@ -1,0 +1,55 @@
+
+/* Definicion de variables de colores del proyecto */
+$primary-color: #3498db;
+$second-color:rgb(151, 238, 167);
+
+/* Reseteo de estilo Inicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definir variables */
+  $primary-color: #3498db;
+  $secondary-color: #e74c3c;
+  
+  /* Estilos personalizados */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Fin de Reseteo de estilo  */
+
+
+
+body {
+  background-color: $primary-color;
+}
+
+.header {
+  background-color: $second-color;
+}
+
+.button {
+  background-color: $primary-color;
+}
+
+.hello-scss{
+    color: yellow;
+}
