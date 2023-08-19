@@ -1,0 +1,95 @@
+
+.Cuerpo-Wrapper{
+    min-height: 40vw;
+    width: 100%;
+    padding: 23vh 0 3vh;
+    position: relative;
+    background: url(./assets/main/webMain.jpg) no-repeat center center / cover;
+  
+}
+.Test{
+    text-align: center;
+    font-size: 100px;
+    background-color: beige;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  
+    &-photo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    &-content {
+        background-color: rgb(241, 129, 129);
+      padding: 16px;
+        
+      & .card-title {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+  
+      & .card-description {
+        margin-top: 8px;
+        color: #666;
+      }
+    }
+  }
+  .tool-container{
+    background-color: gray;
+   
+    margin: 5%;
+  }
+  .tool-title{
+    padding-left: 1em;
+    padding-top: 1em;
+    text-align: left;
+  }
+  .Tecnologias-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las columnas uniformemente */
+  
+    @media (max-width: 768px) {
+      justify-content: center; /* Centra los elementos en dispositivos móviles */
+    }
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 150vh;
+  }
+  
+  .left-panel {
+    width: 33.33%; /* Un tercio del ancho */
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .dividerLeft{
+    width: 96%;
+    background-color: #141313;
+    height: 4px;
+    margin: auto;
+  }
+  .divider {
+    margin: 20px 0px 20px 0px;
+    width: 9px;
+    background-color: #141313;
+  }
+
+
+  
+
+
+
+

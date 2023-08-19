@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './app.scss'
-
+import Header from './Header'
+import Cuerpo from './Cuerpo'
 
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
   return (
     <>
     <div className='hello-scss'>Hello React</div>
+    <Header/>
+    <Cuerpo/>
     </>
   )
 }
