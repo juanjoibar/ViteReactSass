@@ -21,6 +21,10 @@
     text-align: center;
     font-size: 100px;
     background-color: beige;
+    @media (max-width: 49em) {
+     font-size: 60px;
+    }
+
 }
 .card {
     border: 1px solid #ccc;
@@ -56,7 +60,7 @@
   }
   .tool-container{
     background-color: gray;
-   
+    display: flex;
     margin: 5%;
   }
   .tool-title{
@@ -76,7 +80,7 @@
   .container {
     display: flex;
     width: 100%;
-    height: 150vh;
+    //height: 150vh;
   }
   
   .left-panel {
@@ -93,7 +97,7 @@
   }
   .divider {
     margin: 20px 0px 20px 0px;
-    width: 9px;
+    width: 30px;
     background-color: #141313;
   }
 
