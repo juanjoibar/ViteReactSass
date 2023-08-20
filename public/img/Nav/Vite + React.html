@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/juanjoibar/Documents/React Cac/React-Vite-Sass/src/app.scss">@charset "UTF-8";
+/* Definicion de variables de colores del proyecto */
+/* Reseteo de estilo Inicio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definir variables */
+/* Estilos personalizados */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e74c3c;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Fin de Reseteo de estilo  */
+body {
+  background-color: #3498db;
+}
+
+.header {
+  background-color: rgb(151, 238, 167);
+}
+
+.button {
+  background-color: #3498db;
+}
+
+.hello-scss {
+  color: yellow;
+}
+
+.Cuerpo-Wrapper {
+  min-height: 40vw;
+  width: 100%;
+  padding: 23vh 0 3vh;
+  position: relative;
+  background: url(/src/assets/main/webMain.jpg) no-repeat center center/cover;
+}
+
+.Test {
+  text-align: center;
+  font-size: 100px;
+  background-color: beige;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.card-photo img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  background-color: rgb(241, 129, 129);
+  padding: 16px;
+}
+.card-content .card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.card-content .card-description {
+  margin-top: 8px;
+  color: #666;
+}
+
+.tool-container {
+  background-color: gray;
+  margin: 5%;
+}
+
+.tool-title {
+  padding-left: 1em;
+  padding-top: 1em;
+  text-align: left;
+}
+
+.Tecnologias-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye las columnas uniformemente */
+}
+@media (max-width: 768px) {
+  .Tecnologias-ul {
+    justify-content: center; /* Centra los elementos en dispositivos móviles */
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 150vh;
+}
+
+.left-panel {
+  width: 33.33%; /* Un tercio del ancho */
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.dividerLeft {
+  width: 96%;
+  background-color: #141313;
+  height: 4px;
+  margin: auto;
+}
+
+.divider {
+  margin: 20px 0px 20px 0px;
+  width: 9px;
+  background-color: #141313;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/juanjoibar/Documents/React Cac/React-Vite-Sass/src/Header.scss">.Header {
+  width: 100%;
+  padding: 0.8em 0;
+  color: #015ca1;
+  background-color: white;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.Header .Wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-h1 {
+  max-width: 10.3em;
+}
+.Header-img {
+  max-width: 100%;
+}
+@media screen and (max-width: 75em) {
+  .Header-nav {
+    order: 2;
+    width: 100%;
+    border-top: 1px solid #015ca1;
+    margin: 1em 0 0;
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width: 49em) {
+  .Header-nav {
+    display: none;
+  }
+}
+.Header-ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.Header-a {
+  position: relative;
+}
+.Header-a.isActive {
+  font-weight: 600;
+}
+.Header-a.isActive::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: url("/src/assets/Icons/underline.svg") no-repeat center center/auto;
+  bottom: -0.3125rem;
+  left: 0;
+  transition: transform 0.4s ease;
+  transform: scaleX(1);
+}
+.Header-a.isActive:hover::before {
+  transform: scaleX(1.4);
+}
+.Header-rrss {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2em;
+}
+@media screen and (max-width: 75em) {
+  .Header-rrss {
+    display: none;
+  }
+}
+.Header-btn {
+  display: none;
+}
+@media screen and (max-width: 49em) {
+  .Header-btn {
+    display: block;
+  }
+}
+.Header-btnActive {
+  display: block;
+}
+.Header-svg {
+  width: 60px;
+  height: 40px;
+}</style></head>
+  <body>
+    <div id="root"><div class="hello-scss">Hello React</div><header class="Header"><div class="Wrapper"><h1 class="Header-h1"><a href="http://127.0.0.1:5173/#" title="Avatar" class="Header-logo"><img src="./Vite + React_files/react.svg" alt="Avatar" class="Header-img"></a></h1><nav class="Header-nav"><ul class="Header-ul"><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Home</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Movies </a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Games</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Experiences </a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Experiences</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Community</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Publishing</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a isActive ">Partnerships</a></li><li class="Header-il"><a href="http://127.0.0.1:5173/#" class="Header-a  ">Our Team</a></li></ul></nav><button class="Header-btn isActive "><img class="Header-svg" src="./Vite + React_files/hamburger.svg" alt="hamburgesa"></button><ul class="Header-rrss"><li class="Header-li"><a class="Header-rs" href="http://127.0.0.1:5173/#" title="Facebook"><svg class="Hearder-Social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a></li><li class="Header-li"><a class="Header-rs" href="http://127.0.0.1:5173/#" title="Twitter"><svg class="Hearder-Social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg></a></li><li class="Header-li"><a class="Header-rs" href="http://127.0.0.1:5173/#" title="Instagram"><svg class="Hearder-Social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg></a></li><li class="Header-li"><a class="Header-rs" href="http://127.0.0.1:5173/#" title="Youtube"><svg class="Hearder-Social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path></svg></a></li></ul></div></header><div>Cuerpo<div class="Cuerpo-Wrapper"></div><div class="Test">Desarrollos de aplicaciones web</div><div class="dividerLeft"></div><div class="container"><div class="left-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in culpa recusandae pariatur odit tempore molestias deserunt exercitationem, labore commodi, vitae porro quam deleniti modi excepturi. In aut dolore optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur porro, nam quaerat numquam et dolores illo iure consectetur sequi, maiores aut voluptate perspiciatis quod eveniet? Dolores neque modi in!lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eveniet ipsam fuga magni impedit quod, nihil totam assumenda ducimus culpa adipisci modi earum consectetur harum ullam quia ipsa eos voluptatem!</div><div class="divider"></div><div class="tool-container"><h3 class="tool-title">Tecnologias</h3><ul class="Tecnologias-ul"><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/html.png" alt="./img/Logos/html.png"></div><div class="card-content"><h2 class="card-title">Html</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/css.png" alt="./img/Logos/css.png"></div><div class="card-content"><h2 class="card-title">Css</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/bootstrap.jpg" alt="./img/Logos/bootstrap.jpg"></div><div class="card-content"><h2 class="card-title">Bootstrap</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/GitHub.png" alt="./img/Logos/GitHub.png"></div><div class="card-content"><h2 class="card-title">Github</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/javascrip.png" alt="./img/Logos/javascrip.png"></div><div class="card-content"><h2 class="card-title">Javascript</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/mysql.png" alt="./img/Logos/mysql.png"></div><div class="card-content"><h2 class="card-title">MySQL</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/Netlify.png" alt="./img/Logos/Netlify.png"></div><div class="card-content"><h2 class="card-title">Netlify</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/nodeJs.png" alt="./img/Logos/nodeJs.png"></div><div class="card-content"><h2 class="card-title">Node.js</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/react.png" alt="./img/Logos/react.png"></div><div class="card-content"><h2 class="card-title">React</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/sass.png" alt="./img/Logos/sass.png"></div><div class="card-content"><h2 class="card-title">Sass</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/sql-server.png" alt="./img/Logos/sql-server.png"></div><div class="card-content"><h2 class="card-title">SQL Server</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/vite.jpg" alt="./img/Logos/vite.jpg"></div><div class="card-content"><h2 class="card-title">Vite</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/VisualStudio.jpg" alt="./img/Logos/VisualStudio.jpg"></div><div class="card-content"><h2 class="card-title">Visual Studio</h2><p class="card-description">This is the description of the card.</p></div></div></li><li class="Tecnologias-il"><div class="card"><div class="card-photo"><img src="./Vite + React_files/trello.png" alt="./img/Logos/trello.png"></div><div class="card-content"><h2 class="card-title">Trello</h2><p class="card-description">This is the description of the card.</p></div></div></li></ul></div></div><button>Ver mis ult. Proyectos</button></div></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>

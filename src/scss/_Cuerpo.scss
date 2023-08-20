@@ -1,11 +1,21 @@
 
 .Cuerpo-Wrapper{
     min-height: 40vw;
+    margin-top: 50px;
     width: 100%;
     padding: 23vh 0 3vh;
     position: relative;
     background: url(./assets/main/webMain.jpg) no-repeat center center / cover;
   
+}
+.Cuerpo-WrapperisActive{
+  min-height: 40vw;
+  margin-top: 400px;
+  width: 100%;
+  padding: 23vh 0 3vh;
+  position: relative;
+  background: url(./assets/main/webMain.jpg) no-repeat center center / cover;
+
 }
 .Test{
     text-align: center;

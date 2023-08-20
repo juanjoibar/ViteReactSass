@@ -1,3 +1,4 @@
+
 .Header{
     width: 100%;
     padding: .8em 0;
@@ -12,6 +13,14 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+    }
+    .Header-Oculto{
+        @media screen and (max-width:75em){
+            display: none;
+        }
+        @media screen and (max-width: 49em) {
+            display: block;
+        } 
     }
     &-h1{
         max-width: 10.3em;
@@ -46,6 +55,28 @@
         
         
     }
+    &-navisActive{
+        @media screen and (max-width:75em){
+            order:2 ;
+            width: 100%;
+            border-top: 1px solid #015ca1 ;
+            margin: 1em 0 0;
+            padding: 1em 0;
+        }
+        @media screen and (max-width: 49em) {
+            display: inline;
+        }
+
+    }
+    &-ulisActive{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap:1em;
+
+    }
+
     &-li{ }
     
     &-a{
@@ -71,8 +102,28 @@
         }
     }
     &-rrss{
+        @media screen and (max-width:75em){
+            display: none;
+        }
+
         display:flex;
         flex-flow: row nowrap;
+        gap: 2em;
+    }
+    
+     &-btn{
+        @media screen and (max-width:49em){
+            display: block;
+        }
+        display: none;
+    }
+    &-btnActive{
+        display: block;
+    }
+
+    &-svg{
+        width: 60px;
+        height: 40px;
     }
 
 }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './app.scss'
 import Header from './Header'
 import Cuerpo from './Cuerpo'
+import StateContext from './Provider/StateContext'
 
 
 function App() {
@@ -9,9 +10,12 @@ function App() {
 
   return (
     <>
-    <div className='hello-scss'>Hello React</div>
+    <StateContext>
+
+   
     <Header/>
     <Cuerpo/>
+    </StateContext>
     </>
   )
 }

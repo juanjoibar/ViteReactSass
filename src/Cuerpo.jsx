@@ -1,23 +1,28 @@
 import React  from "react";
-import { GlobalContext } from './Provider/Provider'
+//import { GlobalContext } from './Provider/Provider'
+import { GlobalContext } from './Provider/ModoContext'
 import imagen from "./assets/main/webMain.jpg";
 
 import { useContext } from "react";
 
 
 function Cuerpo() {
-  const { hero } = useContext(GlobalContext);
-    const { tools } = hero; 
+  const { bbdd , boton} = useContext(GlobalContext);
+  const {hero} = bbdd 
+  const { tools } = hero; 
+  
   return (
     <div>
       Cuerpo
-      <div className="Cuerpo-Wrapper">
+      <div 
+      className={`Cuerpo-Wrapper${boton ? "" : "isActive"} `}
+      >
         {/* <img className='Cuerpo-img' src= {imagen} alt="web" /> */}
       </div>
       <div className="Test">Desarrollos de aplicaciones web</div>
-      <div class="dividerLeft"></div>
-      <div class="container">
-        <div class="left-panel">
+      <div className="dividerLeft"></div>
+      <div className="container">
+        <div className="left-panel">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in culpa
         recusandae pariatur odit tempore molestias deserunt exercitationem,
         labore commodi, vitae porro quam deleniti modi excepturi. In aut dolore
@@ -29,7 +34,7 @@ function Cuerpo() {
         culpa adipisci modi earum consectetur harum ullam quia ipsa eos
         voluptatem!
       </div>
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div className="tool-container">
         <h3 className="tool-title">Tecnologias</h3>
         <ul className="Tecnologias-ul">

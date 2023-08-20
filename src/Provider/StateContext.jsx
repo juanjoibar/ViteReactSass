@@ -1,7 +1,12 @@
 import { v4 as uuidv4 } from 'uuid'
-import { createContext } from "react";
+import { createContext ,useState} from "react";
+import { GlobalContext } from './ModoContext';
+
+export const StateContext = ({children})=>{
 
 const bbdd = {
+
+
     header : {
 
         menu : [
@@ -45,13 +50,29 @@ const bbdd = {
             { id: uuidv4(), title: 'Vite', href: './img/Logos/vite.jpg', resumen: 'This is the description of the card.' },
             { id: uuidv4(), title: 'Visual Studio', href: './img/Logos/VisualStudio.jpg', resumen: 'This is the description of the card.' },
             { id: uuidv4(), title: 'Trello', href: './img/Logos/trello.png', resumen: 'This is the description of the card.' }
-          ],
+          ]
+          
     }
-}
-export const GlobalContext = createContext(bbdd)
 
-export const Provider = ({children})=>{
-    <GlobalContext.Provider value={bbdd}>
+    
+    
+}
+
+const [boton,setBoton] = useState(true)
+
+//export const GlobalContext = createContext(bbdd,button)
+
+
+const AbrirBoton = ()=>{
+    setBoton(!boton);
+  console.log('se toco boton');
+
+    }  
+    return(
+
+        <GlobalContext.Provider value={{bbdd,boton,AbrirBoton}}>
         {children}
     </GlobalContext.Provider>
+        )
 }
+export default StateContext;
