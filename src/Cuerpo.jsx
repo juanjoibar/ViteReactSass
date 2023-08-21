@@ -35,6 +35,7 @@ function Cuerpo() {
         voluptatem!
       </div>
       <div className="divider"></div>
+      <div className="Main-Container">
       <div className="tool-container">
         <h3 className="tool-title">Tecnologias</h3>
         <ul className="Tecnologias-ul">
@@ -57,6 +58,7 @@ function Cuerpo() {
         ))} 
          
         </ul>
+      </div>
       </div>
       </div>
         <button>Ver mis ult. Proyectos</button>

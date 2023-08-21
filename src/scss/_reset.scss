@@ -1,5 +1,8 @@
 $primary-color: #3498db;
 $second-color:rgb(151, 238, 167);
+$light-color: rgb(255, 247, 247);
+$Dark-Color:rgba(105, 105, 105, 0.769);
+
 /* Reseteo de estilo Inicio */
 * {
     margin: 0;
@@ -36,7 +39,7 @@ $second-color:rgb(151, 238, 167);
 
 
 body {
-  background-color: $primary-color;
+  background-color: white;
 }
 
 .header {

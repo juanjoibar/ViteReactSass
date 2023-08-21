@@ -27,6 +27,10 @@
 
 }
 .card {
+  @media screen and (max-width: 49em) {
+    width: 90%;
+    } 
+
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -83,6 +87,9 @@
       justify-content: center; /* Centra los elementos en dispositivos móviles */
     }
   }
+  .Tecnologias-il{
+    width: 100%;
+  }
   .container {
     @media screen and (max-width: 49em) {
       display:block;
@@ -124,7 +131,9 @@
     width: 30px;
     background-color: #141313;
   }
-
+.Main-Container{
+  background-color: #3498db;
+}
 
   
 
