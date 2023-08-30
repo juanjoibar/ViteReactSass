@@ -2,7 +2,7 @@ import React  from "react";
 //import { GlobalContext } from './Provider/Provider'
 import { GlobalContext } from './Provider/ModoContext'
 import imagen from "./assets/main/webMain.jpg";
-
+import Video from "./Video";
 import { useContext } from "react";
 
 
@@ -44,6 +44,8 @@ function Cuerpo() {
            
            <li key={id} className="Tecnologias-il">
             <div className="card">
+              <div className="cardCover">
+
               <div className="card-photo">
                 <img src={href} alt={href}  />
               </div>
@@ -53,6 +55,7 @@ function Cuerpo() {
                   This is the description of the card.
                 </p>
               </div>
+              </div>
             </div>
           </li>
         ))} 
@@ -61,6 +64,12 @@ function Cuerpo() {
       </div>
       </div>
       </div>
+          <Video/>
+          <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, cum dolores a officiis expedita nisi alias maxime similique facilis enim illo saepe vero, sapiente eius, dolorem repellat iure nostrum? Quas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui.
+            Lorem ipsum dolor sit amet.lorem
+          </div>
         <button>Ver mis ult. Proyectos</button>
     </div>
   );
