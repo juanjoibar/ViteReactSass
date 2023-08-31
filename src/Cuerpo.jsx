@@ -37,7 +37,7 @@ function Cuerpo() {
       <div className="divider"></div>
       <div className="Main-Container">
       <div className="tool-container">
-        <h3 className="tool-title">Tecnologias</h3>
+        <h3 className="tool-title">Tecnologias y herramientas</h3>
         <ul className="Tecnologias-ul">
       
          { tools.map( ({id,title, href,resumen}) =>(

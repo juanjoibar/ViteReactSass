@@ -4,7 +4,10 @@ $light-color: rgb(255, 247, 247);
 $Dark-Color:rgba(105, 105, 105, 0.769);
 
 /* Reseteo de estilo Inicio */
-* {
+* ,
+*::before,
+*::after
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
